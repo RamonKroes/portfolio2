@@ -22,14 +22,13 @@ body{
 	height:100%;
 	content:'';
 	background:inherit;
-	border-bottom:3px solid #00E52F;
 	left:0;
 	top:0;
 	bottom:0;
 	right:0;
 	z-index:-1;
 	transform-origin:left;
-	transform:skewY(2deg);
+	transform:skewY(1deg);
 }
 
 nav{
@@ -70,8 +69,12 @@ main{
 main h1{
 	color:#F5F5F5;
 	font-size:60px;
-
 }
+
+main h1 span{
+	color:#2ecc71;
+}
+
 
 section{
 	width:100%;
@@ -87,6 +90,10 @@ section{
 #paragraaf p{
 	color:#F5F5F5;
 	font-size:25px;
+}
+
+#paragraaf p span{
+	color:#2ecc71;
 }
 
 #text-container{
