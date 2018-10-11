@@ -45,7 +45,7 @@
 						Schoonhoven - Zuid-Holland
 					</div>
 
-					<div id="E-mail" class="text-styling">
+					<div id="e-mail" class="text-styling">
 						<i class="fas fa-envelope"></i>
 						526059@student.glu.nl
 					</div>

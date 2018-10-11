@@ -64,7 +64,7 @@ nav li:nth-last-child(4){
 main{
 	width:100%;
 	text-align:center;
-	padding-top:120px;
+	padding-top:150px;
 }
 
 main h1{
@@ -91,16 +91,23 @@ section{
 
 #text-container{
 	padding-top:150px;
-	width:55%;
+	width:45%;
 	margin:0 auto;
 }
 
-#locatie{
+.text-styling{
 	color:#F5F5F5;
 	font-size:20px;
-	font-family: 'Montserrat', sans-serif;
 }
 
+#locatie{
+	display:inline-block;
+}
+
+#e-mail{
+	float:right;
+	display:inline-block;
+}
 footer{
 	width:100%;
 }
