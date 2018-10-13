@@ -3,6 +3,7 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -11,6 +12,7 @@
 
 	<div class="container">
 		<div class="slanted">
+			<h2>RK</h2>
 			<nav>
 				<ul>
 					<li class="home">
@@ -56,8 +58,6 @@
 				</div>
 			</div>
 		</div>
-
-	
 	</div>	
 
 	<script type="text/javascript" src="js/script.js"></script>
