@@ -165,3 +165,17 @@ section{
 .portfolio-item:nth-last-child(4){
 	margin-left:0;
 }
+
+/* styling voor resume */
+#school-container{
+	padding-top:150px;
+	padding-left:13.020833333333334%;
+}
+
+#glu h2{
+	color:#F5F5F5;
+}
+
+#glu h2 span{
+	color:#2ecc71;
+}

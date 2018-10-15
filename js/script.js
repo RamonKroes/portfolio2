@@ -1,9 +1,5 @@
 $(document).ready(function(){
 	
-	
-
-
-
 	$(document).on('click', '.home', function(){
 		animation();
 		$.ajax({
@@ -17,6 +13,15 @@ $(document).ready(function(){
 		animation();
 		$.ajax({
 			url:"portfolio.php"
+		}).done(function(response){
+			$('#content').html(response);
+		});
+	});
+
+	$(document).on('click', '.resume', function(){
+		animation();
+		$.ajax({
+			url:"resume.php"
 		}).done(function(response){
 			$('#content').html(response);
 		});
