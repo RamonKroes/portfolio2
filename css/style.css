@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 *{
 	margin:0;
 	padding:0;
@@ -34,8 +34,11 @@ body{
 	transform-origin:left;
 	transform:skewY(1deg);
 }
-
-.slanted h2{
+.hoofdtitel-naam{
+	width:10%;
+	display: inline-block;
+}
+.hoofdtitel-naam h2{
 	margin-left:40px;
 	line-height:80px;
 	font-size:40px;
@@ -44,21 +47,21 @@ body{
 
 nav{
 	float:right;
-	width:40%;
+	width:90%;
 	margin:0 auto;
-	text-align:center;
-	padding-top:50px;
+	text-align:right;
+	padding-top:40px;
 	transform-origin:left;
 	transform:skewY(1deg);
 }
 
-nav li{
+nav ul li{
 	display:inline-block;
 	margin-left:80px;
 	font-size:20px;
 }
 
-nav li:hover{
+nav ul li:hover{
 	cursor:pointer;
 	font-weight:bold;
 }
@@ -68,10 +71,14 @@ li a{
 	text-decoration:none;
 }
 
-nav li:nth-last-child(4){
+nav ul li:nth-last-child(4){
 	display:inline-block;
 	margin-left:0px;
 	font-size:20px;
+}
+
+nav ul li:nth-last-child(1){
+	margin-right:40px;
 }
 
 #content{
@@ -85,10 +92,9 @@ main{
 }
 
 main h1{
-	padding-left:13.020833333333334%;
+	margin-left:13.020833333333334%;
 	color:#F5F5F5;
 	font-size:60px;
-	width:50%;
 }
 
 main h1 span{
@@ -104,7 +110,7 @@ section{
 
 #paragraaf{
 	padding-top:30px;
-	width:55%;
+	width:60%;
 }
 
 #paragraaf p{
@@ -117,9 +123,8 @@ section{
 }
 
 #text-container{
-	padding-left:13.020833333333334%;
 	padding-top:150px;
-	width:40%;
+	width:100%;
 }
 
 .text-styling{
@@ -128,11 +133,12 @@ section{
 }
 
 #locatie{
+	margin-left:13.020833333333334%;
 	display:inline-block;
 }
 
 #e-mail{
-	float:right;
+	margin-left:16.589404463928673%;
 	display:inline-block;
 }
 
@@ -144,7 +150,6 @@ section{
 
 #titel h2{
 	color:#FFFFFF;
-	margin-top:200px;
 	text-align:center;
 }
 
@@ -153,13 +158,14 @@ section{
 }
 
 .portfolio-item{
-	width:300px;
-	background-color:#F5F5F5;
-	height:300px;
-	float:left;
+	width:22.22222222222222%;
+	margin-left:40px;
 	display:inline-block;
-	margin-left:50px;
 	margin-top:40px;
+}
+
+.portfolio-item img{
+	width:100%;
 }
 
 .portfolio-item:nth-last-child(4){
@@ -169,13 +175,218 @@ section{
 /* styling voor resume */
 #school-container{
 	padding-top:150px;
-	padding-left:13.020833333333334%;
+	margin-left:13.020833333333334%;
 }
 
-#glu h2{
+#scholen h2{
 	color:#F5F5F5;
 }
 
-#glu h2 span{
+#scholen h2 span{
 	color:#2ecc71;
+}
+
+#school-info{
+	padding-left:30px;
+	padding-top:10px;
+}
+
+#school-info p{
+	color:#FFFFFF;
+	font-size:20px;
+}
+
+#school-info p span{
+	color:#2ecc71;
+	font-size:20px;
+}
+
+#school-info i{
+	color:#2ecc71;
+}
+
+
+@media screen and (max-width: 1024px){
+	nav{
+		width:100%;
+		clear:both;
+		padding-top:10px;
+	}
+
+	nav ul li{
+		width:25%;
+		margin:0 0 0 0;
+		text-align:center;
+		display:inline-block;
+		float:left;
+	}
+
+	nav ul li:nth-last-child(1){
+		margin-right:0;
+	}
+
+	.slanted h2{
+		display:none;
+	}
+	main h1{
+		width:100%;
+		text-align:center;
+		margin:0 0 0 0;
+	}
+
+	section{
+		width:100%;
+		padding:0 0 0 0;
+	}
+
+	#paragraaf{
+		width:70%;
+		text-align:center;
+		margin:0 auto;
+	}
+}
+
+@media screen and (max-width: 805px){
+	#e-mail, #locatie{
+		width:50%;
+		text-align:center;
+		display:inline-block;
+		float:left;
+		margin:0 0 0 0;
+	}
+}
+
+@media screen and (max-width:768px){
+	.slanted:after{
+		display:none;
+	}
+
+	nav{
+		clear:both;
+		transform-origin:left;
+		transform:skewY(0deg);
+		padding-top:10px;
+		padding-bottom:0;
+	}
+
+	nav ul li{
+		margin:0 0 0 0;
+		text-align:center;
+		width:25%;
+	}
+
+	nav ul li:nth-last-child(1){
+		margin-right:0;
+	}
+
+	main h1{
+		width:100%;
+		text-align:center;
+		margin:0 0 0 0;
+	}
+
+	section{
+		width:100%;
+		padding:0 0 0 0;
+	}
+
+	#paragraaf{
+		width:70%;
+		text-align:center;
+		margin:0 auto;
+	}
+
+	#locatie{
+		width:100%;
+		text-align:center;
+		margin:0 0 0 0;
+	}
+
+	#e-mail{
+		width:100%;
+		text-align:center;
+		margin:0 0 0 0;
+	}
+}
+
+@media screen and (max-width:550px){
+	nav{
+		padding-top:0;
+	}
+
+	main h1{
+		font-size:35px;
+	}
+
+	#paragraaf p{
+		font-size:20px;
+	}
+	.left{
+		width:50%;
+		float:left;
+	}
+
+	.right{
+		width:50%;
+		float:right;
+	}
+
+	nav ul li:nth-last-child(2), nav ul li:nth-last-child(1){
+		margin-top:5px;
+	}
+}
+
+@media screen and (max-width: 425px){
+	nav{
+		padding-top:0;
+	}
+
+	main h1{
+		font-size:35px;
+	}
+
+	#paragraaf p{
+		font-size:20px;
+	}
+
+	#text-container{
+		padding-top:100px;
+		margin-bottom:20px;
+	}
+
+	#locatie, #e-mail{
+		font-size:15px;
+	}
+}
+
+
+@media screen and (max-width: 320px){
+	nav ul li{
+		font-size:15px;
+	}
+
+	nav ul li:nth-last-child(4){
+		font-size:15px;
+	}
+
+	main{
+		padding-top:100px;
+	}
+
+	main h1{
+		font-size:30px;
+	}
+
+	#paragraaf p{
+		font-size:15px;
+	}
+
+	#locatie, #e-mail{
+		font-size:15px;
+	}
+
+	#text-container{
+		padding-top:60px;
+		margin-bottom:20px;
+	}
 }

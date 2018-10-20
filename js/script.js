@@ -1,37 +1,11 @@
-$(document).ready(function(){
-	
-	$(document).on('click', '.home', function(){
-		animation();
+function callNewPage(page){
+	animation();
 		$.ajax({
-			url:"home.php"
+			url:page
 		}).done(function(response){
 			$('#content').html(response);
 		});
-	});
-
-	$(document).on('click', '.portfolio', function(){
-		animation();
-		$.ajax({
-			url:"portfolio.php"
-		}).done(function(response){
-			$('#content').html(response);
-		});
-	});
-
-	$(document).on('click', '.resume', function(){
-		animation();
-		$.ajax({
-			url:"resume.php"
-		}).done(function(response){
-			$('#content').html(response);
-		});
-	});
-
-
-
-
-
-});
+}
 
 function animation(){
 	$("#content").html("fadeInUp");
@@ -39,3 +13,23 @@ function animation(){
          	  $(this).removeClass("fadeInUp");
     		}).addClass("fadeInUp");
 	}
+
+$(document).ready(function(){
+	$(document).on('click', '.home', function(){
+		callNewPage("home.php");
+	});
+
+	$(document).on('click', '.portfolio', function(){
+		callNewPage("portfolio.php");
+	});
+
+	$(document).on('click', '.resume', function(){
+		callNewPage("resume.php");
+	});
+
+	$(document).on('click', '.contact', function(){
+		callNewPage("contact.php");
+	});
+
+});
+
