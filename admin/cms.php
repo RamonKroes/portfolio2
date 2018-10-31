@@ -9,6 +9,6 @@ include('connect.php');
 	<title>CMS</title>
 </head>
 <body>
-	Welcome <?= $username ?>
+
 </body> 
 </html>
