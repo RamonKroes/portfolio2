@@ -16,19 +16,19 @@ function animation(){
 
 $(document).ready(function(){
 	$(document).on('click', '.home', function(){
-		callNewPage("home.php");
+		callNewPage("sub-sites/home.php");
 	});
 
 	$(document).on('click', '.portfolio', function(){
-		callNewPage("portfolio.php");
+		callNewPage("sub-sites/portfolio.php");
 	});
 
 	$(document).on('click', '.resume', function(){
-		callNewPage("resume.php");
+		callNewPage("sub-sites/resume.php");
 	});
 
 	$(document).on('click', '.contact', function(){
-		callNewPage("contact.php");
+		callNewPage("sub-sites/contact.php");
 	});
 
 });

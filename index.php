@@ -22,12 +22,6 @@
 					</li>	
 					<li class="portfolio left">
 						PORTFOLIO
-					</li>
-					<li class="resume right">
-						RÉSUMÉ
-					</li>	
-					<li class="contact right">
-						CONTACT
 					</li>	
 				</ul>
 			</nav>
@@ -60,6 +54,8 @@
 				</div>
 			</div>
 		</div>
+		<div class="clear-float"></div>
+		<footer> </footer>
 	</div>	
 
 	<script type="text/javascript" src="js/script.js"></script>
